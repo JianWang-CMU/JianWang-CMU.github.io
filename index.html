@@ -85,11 +85,28 @@
       .paper-link {
       }
       .black-line {
-    color: black; /* Set the color to black */
-    background-color: black; /* Set the background color to black */
-    height: 1px; /* Set the height of the line */
-    border: none; /* Remove the default border */
-    }
+      color: black; /* Set the color to black */
+      background-color: black; /* Set the background color to black */
+      height: 1px; /* Set the height of the line */
+      border: none; /* Remove the default border */
+      }
+      .line-with-text {
+            position: relative;
+            margin-top: 20px; /* 为了将线与上面的内容分开一些 */
+      }
+      
+      .line-with-text hr {
+          margin: 0; /* 重置默认的margin */
+      }
+      
+      .line-text {
+          position: absolute;
+          top: -10px; /* 控制文字的位置 */
+          left: 0; /* 将文字放在线的最左边 */
+          background-color: white; /* 背景色以覆盖线的一部分 */
+          padding: 0 10px; /* 可以添加一些间距 */
+      }
+
     .auto-style1 {
 		font-size: large;
 		font-weight: bold;
@@ -179,6 +196,10 @@
           <h1>Publications<sup><font size="3">*</font></sup></h1> * means equal contribution, (co-)corresponding authors, or co-authors are my student advisees <br>
           (Note these materials are for timely dissemination of scholarly and technical work. Copyright is retained by the authors or publishers, and reproduction is subject to their terms and constraints. Explicit permission is typically required for reposting.)
           
+          <div class="line-with-text">
+            <hr class="black-line">
+            <span class="line-text">2023</span>
+        </div>
 
           <div class="row vspace-top">
             <div class="col-xs-3 text-center">
@@ -313,7 +334,10 @@
         </div>
       </div>
 
-      <hr class="black-line">
+      <div class="line-with-text">
+        <hr class="black-line">
+        <span class="line-text">2022</span>
+    </div>
 
           <div class="row vspace-top">
             <div class="col-xs-3 text-center">
@@ -515,7 +539,10 @@
             </div>
         </div>
 
-      <hr class="black-line">
+        <div class="line-with-text">
+          <hr class="black-line">
+          <span class="line-text">2021</span>
+      </div>
           
 		  <div class="row vspace-top">
               <div class="col-xs-3 text-center">
@@ -545,7 +572,10 @@
               </div>
           </div>
 
-          <hr class="black-line">
+          <div class="line-with-text">
+            <hr class="black-line">
+            <span class="line-text">2020</span>
+        </div>
           
           <div class="row vspace-top">
               <div class="col-xs-3 text-center">
@@ -596,7 +626,10 @@
               </div>
           </div>
 
-          <hr class="black-line">
+          <div class="line-with-text">
+            <hr class="black-line">
+            <span class="line-text">2019</span>
+        </div>
           
           <div class="row vspace-top">
               <div class="col-xs-3 text-center">
@@ -668,7 +701,10 @@
               </div>
           </div>
 
-          <hr class="black-line">
+          <div class="line-with-text">
+            <hr class="black-line">
+            <span class="line-text">Before PhD graduation</span>
+          </div>
           
           <div class="row vspace-top">
               <div class="col-xs-3 text-center">
