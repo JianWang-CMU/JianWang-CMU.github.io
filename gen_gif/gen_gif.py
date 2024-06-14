@@ -5,7 +5,7 @@ import cv2
 def add_text_to_image(image, text_to_add, right=False):
     draw = ImageDraw.Draw(image)
 
-    font_size = 40
+    font_size = 100
     font = ImageFont.truetype("ttf_all/Roboto-Regular.ttf", font_size) 
 
     text_color = (255, 255, 255)
@@ -113,7 +113,7 @@ def create_gif2(blurred_path, clear_path, output_path, num_frames=30, line_thick
 #     create_gif(sam_path, robust_sam_path, output_gif_path, back_n_forth=True)
 
 
-im_input_path = "diffbody/diffbody1.png"
-im_output_path = "diffbody/diffbody2.png"
-output_gif_path = os.path.join('diffbody', "back_n_forth2.gif")
+im_input_path = "sagiri/Picture1.jpg"
+im_output_path = "sagiri/Picture2.png"
+output_gif_path = os.path.join('sagiri', "back_n_forth3.gif")
 create_gif2(im_output_path, im_input_path, output_gif_path, back_n_forth=True)
